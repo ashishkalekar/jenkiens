@@ -23,7 +23,7 @@ app.use(methodOverride(function (req, res) {
 
 let todolist = [];
 
-/* The to do list and the form are displayed tring to     */
+/* The to do list and the form are di/////splayed tring to     */
 app.get('/todo', function (req, res) {
         res.render('todo.ejs', {
             todolist,
