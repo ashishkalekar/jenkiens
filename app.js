@@ -33,7 +33,7 @@ app.get('/todo', function (req, res) {
 
     /* Adding an item to the to do list */
     .post('/todo/add/', function (req, res) {
-        // Escapes HTML special /////characters in attribute values as HTML entities just testing 
+        // Escapes HTML special //characters in attribute values as HTML entities just testing 
         let newTodo = sanitizer.escape(req.body.newtodo);
         if (req.body.newtodo != '') {
             todolist.push(newTodo);
